@@ -6,6 +6,7 @@ class Record(models.Model):
     temperature = models.CharField(max_length=255)
     pressure = models.CharField(max_length=255)
     humidity = models.CharField(max_length=255)
+    created = models.CharField(max_length=255)
 
     class Meta:
         ordering = ['id']
